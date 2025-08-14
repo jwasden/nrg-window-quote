@@ -2,7 +2,9 @@ import { promises as fs } from "fs";
 import path from "path";
 import { QuoteStore, Quote, NewQuotePayload } from "./types";
 
-const DATA_DIR = path.join(process.cwd(), "data");
+const isVercel = !!process.env.VERCEL;
+// use /tmp on Vercel to prevent EROFS; NOT durable
+const DATA_DIR = isVercel ? "/tmp" : path.join(process.cwd(), "data");
 const QUOTES_PATH = path.join(DATA_DIR, "quotes.json");
 
 async function ensureFile() {
