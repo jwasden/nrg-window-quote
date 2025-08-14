@@ -1,5 +1,6 @@
 "use client";
 import { useMemo, useState } from "react";
+import Link from "next/link";
 //import catalog from "@/../data/catalog.json";
 import catalog from "./../data/catalog.json";
 // import { priceItem, allowedInteriorForExterior } from "@/lib/pricing";
@@ -93,8 +94,14 @@ export default function Page() {
         <header className="mb-6">
           <h1 className="text-3xl font-semibold tracking-tight">NRG Window Quote</h1>
           <p className="text-sm text-slate-600">MVP for window catalog & pricing lead generation.</p>
-          <a className="text-sm text-slate-600 hover:underline text-blue-500" target="_self" href={`http://${window.location.host}/admin/quotes`}>Download quotes</a>
-          <a href={`${window.location.host}/admin/quote`} />
+          
+          <Link
+            href="/admin/quotes"
+            className="text-sm text-slate-600 hover:underline text-blue-500"
+          >
+            Download quotes
+          </Link>
+          {/* <a href={`${window.location.host}/admin/quote`} /> */}
         </header>
 
         <section className="grid gap-6 md:grid-cols-3">
