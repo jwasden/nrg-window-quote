@@ -95,12 +95,12 @@ export default function Page() {
           <h1 className="text-3xl font-semibold tracking-tight">NRG Window Quote</h1>
           <p className="text-sm text-slate-600">MVP for window catalog & pricing lead generation.</p>
           
-          <Link
+          {/* <Link
             href="/admin/quotes"
             className="text-sm text-slate-600 hover:underline text-blue-500"
           >
             Download quotes
-          </Link>
+          </Link> */}
           {/* <a href={`${window.location.host}/admin/quote`} /> */}
         </header>
 
