@@ -1,0 +1,40 @@
+{
+    "windowTypes": [
+      { "id": "doubleHung", "label": "Double‑Hung" },
+      { "id": "slider", "label": "Slider" },
+      { "id": "casement", "label": "Casement" },
+      { "id": "picture", "label": "Picture" }
+    ],
+    "sizePresets": [
+      { "id": "S", "label": "Small", "widthIn": 24, "heightIn": 36 },
+      { "id": "M", "label": "Medium", "widthIn": 36, "heightIn": 54 },
+      { "id": "L", "label": "Large", "widthIn": 48, "heightIn": 72 }
+    ],
+    "exteriorColors": ["White", "Almond", "Desert Clay", "Black", "Architectural Bronze", "Silver"],
+    "interiorColors": ["White", "Almond"],
+    "notes": {
+      "exteriorInteriorConstraint": ["Black", "Architectural Bronze", "Silver"],
+      "exteriorInteriorConstraintInteriorAllowed": ["White", "Almond"]
+    },
+    "gridProfiles": [
+      { "id": "std-5-8", "label": "5/8\" Standard" },
+      { "id": "cont-3-4", "label": "3/4\" Contoured" },
+      { "id": "cont-1", "label": "1\" Contoured" }
+    ],
+    "gridPatterns": ["Colonial", "Prairie", "Craftsman"],
+    "obscureGlass": ["None", "Obscure", "Rain", "Glue Chip", "Satin Etched"],
+    "glazing": [
+      { "id": "dual", "label": "Dual Pane (Low‑E + Argon)" },
+      { "id": "triple", "label": "Triple Pane (Low‑E x2/3 + Argon/Krypton)" }
+    ],
+    "optionalUpgrades": [{ "id": "cavityFoam", "label": "Enhanced Cavity Foam" }],
+    "standardFeatures": [
+      "EdgeForce narrowline frame & sash",
+      "Ocular screen bulb seal",
+      "CoreFX composite reinforcement",
+      "Defense‑Tek secure locking",
+      "Forecaster true sloped sill",
+      "HP3 telescoping sill",
+      "Gatekeeper sash‑to‑sill interlock"
+    ]
+  }

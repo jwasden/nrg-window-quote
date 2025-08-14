@@ -1,5 +1,15 @@
-const config = {
-  plugins: ["@tailwindcss/postcss"],
+// ESM
+export default {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
 };
 
-export default config;
+
+// module.exports = {
+//   plugins: {
+//     tailwindcss: {},
+//     autoprefixer: {},
+//   },
+// }

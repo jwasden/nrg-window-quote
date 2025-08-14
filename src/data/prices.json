@@ -1,0 +1,37 @@
+{
+  "base": {
+    "double_hung": { "S": 360, "M": 520, "L": 720 },
+    "slider":      { "S": 340, "M": 500, "L": 700 },
+    "casement":    { "S": 420, "M": 600, "L": 820 },
+    "picture":     { "S": 300, "M": 450, "L": 640 }
+  },
+  "exteriorColorUpchargePct": {
+    "White": 0,
+    "Almond": 0.05,
+    "Desert Clay": 0.05,
+    "Black": 0.12,
+    "Architectural Bronze": 0.12,
+    "Silver": 0.12
+  },
+  "gridProfileAdd": {
+    "none": 0,
+    "std-5-8": 40,
+    "cont-3-4": 70,
+    "cont-1": 90
+  },
+  "gridPatternAdd": {
+    "None": 0,
+    "Colonial": 0,
+    "Prairie": 15,
+    "Craftsman": 25
+  },
+  "glazingAdd": { "dual": 0, "triple": 90 },
+  "obscureGlassAdd": {
+    "None": 0,
+    "Obscure": 75,
+    "Rain": 85,
+    "Glue Chip": 95,
+    "Satin Etched": 110
+  },
+  "upgradesAdd": { "cavityFoam": 45 }
+}
