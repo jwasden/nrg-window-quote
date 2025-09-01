@@ -29,12 +29,16 @@ export function PriceStep({ data }: { data: LeadPayload }) {
         <p className="text-sm text-emerald-900 mt-1">Many customers in your area pay as little as ${(adMin/Math.max(1, data.windowsCount)).toLocaleString()} per window with this program, which means your cost could be as low as ${adMin.toLocaleString()} – ${adMax.toLocaleString()}.</p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        <a href={process.env.NEXT_PUBLIC_SCHEDULER_RETAIL_URL || '#'} className="rounded-xl bg-gray-900 px-6 py-3 text-center font-medium text-white hover:bg-black">Check My Eligibility for Retail Price</a>
-        <a href={process.env.NEXT_PUBLIC_SCHEDULER_AD_URL || '#'} className="rounded-xl bg-emerald-600 px-6 py-3 text-center font-medium text-white hover:bg-emerald-700">Check My Eligibility for Advertising Price</a>
+      <div>
+        <p className="text-sm text-gray-600">An NRG specialist will contact you shortly to review your estimate and discuss .</p>
       </div>
 
-      <p className="text-xs text-gray-500">We’ll also text/email your quote if you opted in.</p>
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <a href={process.env.NEXT_PUBLIC_SCHEDULER_RETAIL_URL || '#'} className="rounded-xl bg-gray-900 px-6 py-3 text-center font-medium text-white hover:bg-black">Check My Eligibility for Retail Price</a>
+        <a href={process.env.NEXT_PUBLIC_SCHEDULER_AD_URL || '#'} className="rounded-xl bg-emerald-600 px-6 py-3 text-center font-medium text-white hover:bg-emerald-700">Check My Eligibility for Advertising Price</a>
+      </div> */}
+
+      {/* <p className="text-xs text-gray-500">We’ll also text/email your quote if you opted in.</p> */}
     </div>
   )
 }

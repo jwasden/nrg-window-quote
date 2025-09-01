@@ -37,7 +37,7 @@ Instantly See Your Window Replacement Price
 <span className="block text-gray-300 text-2xl mt-3">And find out if you qualify for our Special 50% Off Program.</span>
 </h1>
 <p className="mt-6 text-gray-300">
-You may qualify for our exclusive Advertising Home Program (limited availability this month).
+(The Advertising Home Program has limited availability this month).
 </p>
 <div className="mt-8">
 <Link href="/funnel" className="inline-flex items-center gap-2 rounded-2xl bg-white/95 px-6 py-3 font-medium text-gray-900 shadow-lg shadow-white/10 hover:bg-white">

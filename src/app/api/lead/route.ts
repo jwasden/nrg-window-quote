@@ -3,7 +3,8 @@
 // =============================================
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
-import recipientsConfig from '@/config/leadTargets.json'
+//import recipientsConfig from '@/config/leadTargets.json'
+import recipientsConfig from './../../../config/leadTargets.json'
 
 export const dynamic = 'force-dynamic'
 
