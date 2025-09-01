@@ -30,7 +30,7 @@ export function PriceStep({ data }: { data: LeadPayload }) {
       </div>
 
       <div>
-        <p className="text-sm text-gray-600">An NRG specialist will contact you shortly to review your estimate and discuss .</p>
+        <p className="text-sm text-gray-600">An NRG specialist will contact you shortly to review your estimate and discuss next steps!</p>
       </div>
 
       {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
