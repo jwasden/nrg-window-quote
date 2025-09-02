@@ -31,7 +31,10 @@ export async function POST(req: Request) {
       `Ad Program: ${payload.wantsAdProgram ? 'Yes' : 'No'}`,
       `Name: ${payload.fullName} | Email: ${payload.email} | Phone: ${payload.phone || 'N/A'}`,
       `Best Time: ${payload.bestTime}`,
-    ]
+      `Frame Color: ${payload.frameColor} | Grids: ${payload.grids}`,
+      payload.frameColorThumb ? `Color Thumb: ${payload.frameColorThumb}` : undefined,
+      `Style Quantities: ${JSON.stringify(payload.styleQuantities || {})}`,
+    ].filter(Boolean) as string[]
 
     const html = `
       <h2>New Window Lead</h2>
