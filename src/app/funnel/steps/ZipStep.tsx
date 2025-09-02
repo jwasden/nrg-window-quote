@@ -12,6 +12,7 @@ function inSouthwest(zip: string) {
   if (z3 >= 840 && z3 <= 847) return { ok: true, state: 'UT' }
   if (z3 >= 889 && z3 <= 898) return { ok: true, state: 'NV' }
   if (z3 >= 870 && z3 <= 884) return { ok: true, state: 'NM' }
+  if (z3 >= 832 && z3 <= 838) return { ok: true, state: 'ID' }
   return { ok: false as const }
 }
 
@@ -27,7 +28,7 @@ export function ZipStep({ data, onNext }: { data: LeadPayload, onNext: (partial:
     }
     const res = inSouthwest(zip)
     if (!res.ok) {
-      setError('Sorry, we currently serve AZ, UT, NV, and NM only.')
+      setError('Sorry, we currently serve AZ, UT, ID, NV, and NM only.')
       return
     }
     setError('')
